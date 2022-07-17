@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+@font-face {
+    font-family: 'cherie_bombregular';
+    src: url('./assets/fonts/cherie_bomb/cheriebomb-webfont.woff2') format('woff2'),
+         url('./assets/fonts/cherie_bomb/cheriebomb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 50px;
+}
+
+header .headerDiv {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header ul.menu {
+    list-style: none;
+}
+
+header ul.menu li {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+header ul.menu li:not(:last-child) {
+    margin-right: 35px;
+}
+main {
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, .4) 10%, rgba(0, 0, 0, 0.1));
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    text-transform: uppercase;
+    font-family: 'cherie_bombregular';
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+h3 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    text-transform: uppercase;
+    font-family: 'Edu VIC WA NT Beginner';
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+    padding: 36px 10px;
+    margin: 0 1px;
+}
+
+nav a:hover{
+    background: rgba(17, 162, 80, 0.286);
+    color: rgb(193, 200, 208);
+}
